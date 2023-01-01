@@ -2,7 +2,7 @@
 
 ## Overview
 
-In this challenge, i had to solve a real-world situation in which my newfound JavaScript skills come in handy. I created the code for analyzing the financial records of a company. The financial dataset was already provided in the index.js starter file.
+In this challenge, i had to solve a real-world situation in which my newfound JavaScript skills come in handy (console log, variables, primitive types, logical and comparison operators, conditional statements, arrays, iteration, prompts, switch-case, and conditional loops). I created the code for analyzing the financial records of a company. The financial dataset was already provided in the index.js starter file.
 
 ## Instructions
 
@@ -36,15 +36,9 @@ Your final code should print the analysis to the console.
 
 You are required to submit BOTH of the following for review:
 
-* The URL of the deployed application is: 
+* The URL of the deployed application is [here](https://inaciobanu.github.io/Console-Finances/)
 
 * The URL of the GitHub repository that contains your code is [here](https://github.com/inaciobanu/Console-Finances).
 ---
-
-## Copyright
-
-© 2022 edX Boot Camps LLC. Confidential and Proprietary. All Rights Reserved.
-
-
 
 [def]: Sample_screenshot.png
