@@ -86,14 +86,16 @@ var finances = [
 ['Jan-2017', 138230],
 ['Feb-2017', 671099]
 ];
-
-console.log(finances.length);
+console.log("Financial Analysis");
+console.log("--------------------------");
+console.log("Total Months: " + finances.length);
 // total amount of Profit/Losses 
 var sum = 0;
 for (var i = 0; i < finances.length; i++) {
     sum += finances[i][1];
 }
-console.log(sum);
+//printing the net total amount of Profit/Losses over the entire period onto the console
+console.log("Total: " + sum);
 //declaring monthly change for calculating the total profit/loss
 var monthlyChange = 0;
 //declaring monthly change for calculating the min and max of monthly profit/loss
@@ -102,7 +104,7 @@ var monthlyChangeMinMax = 0;
 var min = finances[1][1] - finances[0][1];
 var max = min;
 var minMonth = maxMonth = finances[1][0];
-for (var i = 1; i < finances.length - 1 ; i++) {
+for (var i = 0; i < finances.length - 1 ; i++) {
     monthlyChange += finances[i+1][1] - finances[i][1];
     monthlyChangeMinMax = finances[i+1][1] - finances[i][1];
     if (monthlyChangeMinMax > max) {
@@ -114,9 +116,12 @@ for (var i = 1; i < finances.length - 1 ; i++) {
         minMonth = finances[i+1][0];
     };
 }
-// average of the changes in Profit/Losses over the entire period
-var averageChange = monthlyChange / finances.length - 1;
-console.log(averageChange);
+// average of the changes in Profits over the entire period
+var averageChange = monthlyChange / (finances.length -1) ;
+//priting the average onto the Console with only 2 variables
+console.log("Average Change: " + averageChange.toFixed(2));
+//priting the greastest increase in profits onto the console
 console.log("Greatest Increase in Profits: " + maxMonth + " ($" + max + ")");
+//priting the greatest decrease in profits onto the console
 console.log("Greatest Decrease in Profits: " + minMonth + " ($" + min + ")");
 
